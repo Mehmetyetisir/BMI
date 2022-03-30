@@ -4,7 +4,7 @@ public class AccountInfo {
         system.debug('Welcome to the world of SOQL.Please enter the character to search.');
     }
     public static void searchContacts(string key) {
-
+        //you
         List<Contact> contactList = [select id, name, birthdate, account.description, account.industry, account.type FROM Contact where name like : '&' + key + '%'];
 
         for ( contact eachContact: contactList){
